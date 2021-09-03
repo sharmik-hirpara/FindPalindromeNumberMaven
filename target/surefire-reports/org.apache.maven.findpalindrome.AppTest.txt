@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.maven.findpalindrome.AppTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! - in org.apache.maven.findpalindrome.AppTest
+nextPalindromeTest3(org.apache.maven.findpalindrome.AppTest)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "--"
+	at org.apache.maven.findpalindrome.AppTest.nextPalindromeTest3(AppTest.java:46)
+
