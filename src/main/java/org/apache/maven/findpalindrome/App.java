@@ -6,16 +6,15 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
+    	
 		boolean exit = false;
 		int option = 0;
 		
 		while(!exit) {
-			System.out.println("Press " + 1 + " to Find next palindrome ");
-			System.out.println("Press " + 2 + " to Exit");
+			System.out.print("\nPress " + 1 + " to Find next palindrome. ");
+			System.out.print("\nPress " + 2 + " to Exit.");
 			option = new Scanner(System.in).nextInt();
 			switch(option) {
 			case 1:
@@ -60,7 +59,6 @@ public class App
 		int finalNumber = Integer.parseInt(result.toString());
 		
 		if(finalNumber > number)
-//			System.out.println("The next palindrome number is " + finalNumber);
 			System.out.print(finalNumber);
 		else {
 			int firstHalf = Integer.valueOf(result.substring(0, originalString.length()/2));
@@ -100,14 +98,12 @@ public class App
 		int finalNumber = Integer.parseInt(result.toString());
 		
 		if(finalNumber > number)
-//			System.out.println("The next palindrome number is " + finalNumber);
 			System.out.print(finalNumber);
 		else {
 			int numberAtMidPos = Integer.parseInt(String.valueOf(result.charAt(originalString.length()/2)));
 			if (numberAtMidPos < 9) {
 				result.replace(originalString.length()/2, originalString.length()/2 + 1, String.valueOf(numberAtMidPos + 1));
 				finalNumber = Integer.parseInt(result.toString());
-//				System.out.println("The next palindrome number is " + finalNumber);
 				System.out.print(finalNumber);
 			}
 			else {

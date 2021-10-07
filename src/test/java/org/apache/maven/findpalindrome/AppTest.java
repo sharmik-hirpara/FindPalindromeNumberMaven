@@ -1,7 +1,6 @@
 package org.apache.maven.findpalindrome;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -43,8 +42,8 @@ public class AppTest
 	
 	@Test
 	public void nextPalindromeTest3() {
-		App.checkLength(-1);		
-		assertEquals("131", String.valueOf(outContent.toString()));
+		App.checkLength(105982);		
+		assertEquals("106601", String.valueOf(outContent.toString()));
 
 	}
 	
